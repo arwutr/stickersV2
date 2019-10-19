@@ -1,21 +1,15 @@
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARM-Stickers</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <center>
-        <div class="flex">
-          <a href="https://line.me/ti/p/KV_YGjVilf" class="bttn">ID armtrue</a>
-        </div></center>
-    <center>
-<a href="line://app/1583925164-BRgrrNNe?type=sticker&stk=noanim&sid=11122055&pkg=127437">ทอสอบ1</a><p>
-<a href="line://app/1583925164-BRgrrNNe?type=sticker&stk=noanim&sid=11122056&pkg=127437">ทอสอบ2</a><p>
-    <center>
-        <h2 style="color: #3f3f3f;">Designed by <a href="https://line.me/ti/p/KV_YGjVilf" style="color: #3f3f3f; text-decoration: none; font-size: 20px;">armtrue</a></h2>
-        <h3><code style="color: #3f3f3f;"><i><a href="https://line.me/ti/p/KV_YGjVilf" style="color: #3f3f3f; text-decoration: none;">armtrue</a> &copy; 2020</i></code></h3>
-    </center>
-    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
-    <script src="liff-starter.js"></script>
-</body>
+<script src="https://d.line-scdn.net/liff/1.0/sdk.js" /></script>
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+  <script>
+    const canvas = document.querySelector('#canvas');
+    const signaturePad = new SignaturePad(canvas, {
+      backgroundColor: 'rgb(238,238,238)',
+    });
+    $(window).on('load', function(){
+      canvas.setAttribute('width', $('.container').width());
+      canvas.setAttribute('height', window.innerHeight - $('#btn').outerHeight() - 10);
+      signaturePad.clear();
+	  // Initializes a LIFF app
+      liff.init(function (data) {});
+    });
+  </script>
