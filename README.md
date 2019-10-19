@@ -1,1 +1,2 @@
-# stickersV.2
+# liff
+Public Liff
